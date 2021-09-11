@@ -1,0 +1,36 @@
+$flexContainer: 100%;
+
+footer {
+    margin-top: auto;
+    background:linear-gradient(to bottom, #9b7550, #ec9961) ;
+    background-repeat: none;
+    width: $flexContainer;
+    .footer__redes {
+        width: ($flexContainer);
+        text-align: right;
+        justify-content:end;
+    }
+    .footer__subscribe{
+        width: ($flexContainer);
+        margin-top: 10px;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__subscribe {
+        display: none;
+    }
+    .footer__redes{
+        width: $flexContainer;
+        text-align: center;
+        justify-content:flex-start
+    }
+
+    
+}
