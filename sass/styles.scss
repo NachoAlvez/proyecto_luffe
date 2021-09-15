@@ -203,11 +203,13 @@ div{
 
 .card {
     background-color: #f2ebdf;
+    margin-bottom: 10px;
     :hover{
         opacity: 0.8;
         transition: 0.5s;
     }
     img{
+        min-height: 320px;
         max-height: 320px;
     }
     

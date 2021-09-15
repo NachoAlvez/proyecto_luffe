@@ -457,6 +457,7 @@ div.nosotros div.nosotros__image img {
 
 .card {
   background-color: #f2ebdf;
+  margin-bottom: 10px;
 }
 
 .card :hover {
@@ -466,6 +467,7 @@ div.nosotros div.nosotros__image img {
 }
 
 .card img {
+  min-height: 320px;
   max-height: 320px;
 }
 
