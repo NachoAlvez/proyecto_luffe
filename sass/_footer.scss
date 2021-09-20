@@ -5,15 +5,45 @@ footer {
     background:linear-gradient(to bottom, #9b7550, #ec9961) ;
     background-repeat: none;
     width: $flexContainer;
-    .footer__redes {
-        width: ($flexContainer);
-        text-align: right;
-        justify-content:end;
-    }
-    .footer__subscribe{
-        width: ($flexContainer);
-        margin-top: 10px;
+    display: flex;
+    
+    .footer__container{
+        display: flex;
+        width: $flexContainer;
+        align-items: flex-start;
+        flex-direction: row;
+        .footer__redes {
+            width: ($flexContainer/2);
+            text-align: right;
+            justify-content:end;
+            margin: 5px;
+            padding-right: 20px;
+            .footer__redes--icons{
+                padding: 5px;
+                margin: 5px;
+                a {
+                    color: #f2ebdf;
+                }
+                a:hover{
+                    color: blue;
+                    transition: 0.2s;
+                }
+            }
+        }
         
+        .footer__subscribe {
+            width: ($flexContainer/2);
+            margin-top: 20px;
+            margin-left: 10px;
+            
+        }
+        .footer__copyright {
+            flex-direction: column;
+            justify-content: center;
+            align-self: flex-end;
+            border-top: 1px #f2ebdf solid;
+            
+        }
     }
 }
 
@@ -30,6 +60,9 @@ footer {
         width: $flexContainer;
         text-align: center;
         justify-content:flex-start
+    }
+    .footer__copyright{
+        display:none;
     }
 
     
