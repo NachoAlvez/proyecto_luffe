@@ -26,11 +26,57 @@ footer {
     margin-top: auto;
     background:linear-gradient(to bottom, #9b7550, #ec9961) ;
     background-repeat: none;
+    width: 100%;
+    display: flex;
     
+}
+.footer__container {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: row;
 }
 .footer__redes {
     text-align: right;
-    justify-content: space-between;
+    justify-content:space-between;
+    width: 50%;
+    margin: 5px;
+    padding-right: 20px;
+}
+.footer__redes--icons {
+    padding: 5px;
+    margin: 5px;
+}
+.footer__redes--icons a {
+    color: #f2ebdf;
+}
+.footer__redes--icons a:hover {
+    color: blue;
+    transition: 0.2s;
+}
+.footer__subscribe {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__subscribe {
+        display: none;
+    }
+    .footer__redes{
+        width: 100%;
+        text-align: center;
+        justify-content:flex-start
+    }
+    .footer__copyright{
+        display:none;
+    }
 }
 
                                                            /* fin footer*/
