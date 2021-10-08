@@ -370,7 +370,7 @@ body {
 }
 
 .slide img {
-  height: 70vh;
+  height: 75vh;
 }
 
 .carousel-img {
@@ -549,9 +549,19 @@ span {
   font-family: 'Roboto', sans-serif;
 }
 
-div.multimedia iframe {
+.multimedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.multimedia iframe {
   text-align: center;
-  width: 100%;
+  width: 50%;
   margin-top: 20px;
 }
 

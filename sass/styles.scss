@@ -55,7 +55,8 @@ body {
 
 //carousel bootstrap
 .slide img {
-    height: 70vh;
+    height: 75vh;
+    //padding: 40px;
 }
 .carousel-img {
     height: auto;
@@ -68,6 +69,8 @@ body {
         font-size: 25px;
     }
 }
+
+
 //header bootstrap
 .bg-light-new{
     background-color:  #9b7550;
@@ -208,15 +211,17 @@ span{
     color: black;
     font-family: 'Roboto', sans-serif;
 }
-div{
-    &.multimedia{
-        iframe{
+.multimedia{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    iframe{
         text-align: center;
-        width: 100%;
+        width: 50%;
         margin-top: 20px;
         }
     }
-}
+
 .titulo{
     text-align: center;
     color: rgb(162,118,82);
