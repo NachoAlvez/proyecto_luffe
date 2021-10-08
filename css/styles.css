@@ -21,7 +21,7 @@ header .menu ul li a a:hover {
   color: #d4d4ca;
 }
 
-footer {
+.footer__area {
   margin-top: auto;
   background: -webkit-gradient(linear, left top, left bottom, from(#9b7550), to(#ec9961));
   background: linear-gradient(to bottom, #9b7550, #ec9961);
@@ -32,7 +32,7 @@ footer {
   display: flex;
 }
 
-footer .footer__container {
+.footer__area .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +46,7 @@ footer .footer__container {
           flex-direction: row;
 }
 
-footer .footer__container .footer__redes {
+.footer__area .footer__container .footer__redes {
   width: 50%;
   text-align: right;
   -webkit-box-pack: justify;
@@ -56,64 +56,83 @@ footer .footer__container .footer__redes {
   padding-right: 20px;
 }
 
-footer .footer__container .footer__redes .footer__redes--icons {
+.footer__area .footer__container .footer__redes .footer__redes--icons {
   padding: 5px;
   margin: 5px;
 }
 
-footer .footer__container .footer__redes .footer__redes--icons a {
+.footer__area .footer__container .footer__redes .footer__redes--icons a {
   color: #f2ebdf;
 }
 
-footer .footer__container .footer__redes .footer__redes--icons a:hover {
-  color: blue;
+.footer__area .footer__container .footer__redes .footer__redes--icons a:hover {
+  color: #705336;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-footer .footer__container .footer__subscribe {
+.footer__area .footer__container .footer__subscribe {
   width: 50%;
   margin-top: 20px;
   margin-left: 10px;
 }
 
-footer .footer__container .footer__copyright {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+footer .footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  border-top: 1px #f2ebdf solid;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9b7550), to(#ec9961));
+  background: linear-gradient(to top, #9b7550, #ec9961);
+  padding: 5px;
+}
+
+footer .footer__copyright a {
+  text-decoration: none;
+  color: #181515;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
-  footer {
+  .footer__area {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
-  .footer__subscribe {
+  .footer__area .footer__container .footer__subscribe {
     display: none;
   }
-  .footer__redes {
-    width: 100%;
+  .footer__area .footer__container .footer__redes {
+    width: 200%;
     text-align: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .footer__copyright {
-    display: none;
+  .footer__area .footer__container .footer__redes .footer__redes--icons {
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  footer .footer__copyright p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  footer .footer__copyright p {
+    font-size: 12px;
   }
 }
 
@@ -152,7 +171,7 @@ footer .footer__container .footer__copyright {
   margin-top: 20px;
 }
 
-.contact .flex-container .contact-info {
+.contact .flex-container .contactInfo {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,14 +182,14 @@ footer .footer__container .footer__copyright {
           flex-direction: column;
 }
 
-.contact .flex-container .contact-info .box {
+.contact .flex-container .contactInfo .box {
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contact .flex-container .contact-info .box .icon {
+.contact .flex-container .contactInfo .box .icon {
   min-width: 60px;
   height: 60px;
   background: white;
@@ -187,7 +206,7 @@ footer .footer__container .footer__copyright {
   font: 22px;
 }
 
-.contact .flex-container .contact-info .box .text {
+.contact .flex-container .contactInfo .box .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,7 +220,7 @@ footer .footer__container .footer__copyright {
   font-weight: 300;
 }
 
-.contact .flex-container .contact-info .box .text h3 {
+.contact .flex-container .contactInfo .box .text h3 {
   font-weight: 500;
   font-family: 'Noto Sans SC', sans-serif;
   color: #a27652;
@@ -241,7 +260,7 @@ footer .footer__container .footer__copyright {
   outline: none;
 }
 
-.contact .flex-container .form .textarea {
+.contact .flex-container .form textarea {
   min-height: 120px;
   resize: none;
 }
@@ -608,6 +627,10 @@ div ol {
   max-height: 320px;
 }
 
+.card .card-body .card-text {
+  height: 180px;
+}
+
 .dropdown-menu {
   background-color: #9b7550;
 }
@@ -620,19 +643,6 @@ div ol {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-}
-
-.btn-color {
-  background-color: #9b7550;
-}
-
-.btn {
-  border-color: #9b7550;
-}
-
-.btn:hover {
-  background: #5a3714;
-  border-color: #5a3714;
 }
 
 h1 {
@@ -670,11 +680,11 @@ p {
 }
 
 .body__error .error__container h1 {
-  font-size: 180px;
+  font-size: 200px;
   margin: 0;
   font-weight: 900;
   letter-spacing: 20px;
-  background: url(../multimedia/bg5.jfif) center no-repeat;
+  background: url(../multimedia/bg7.jfif) center no-repeat;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -704,5 +714,15 @@ p {
   .body__error .error__container h1 {
     font-size: 120px;
   }
+}
+
+button.mercadopago-button {
+  background-color: #9b7550;
+  color: #f2ebdf;
+  border: 1px solid #9b7550;
+  border-radius: 25px;
+  padding: 2px 30px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=styles.css.map */

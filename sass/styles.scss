@@ -107,7 +107,6 @@ p {
 .container__custom {
     width: 100%;
     height: 70vh;
-    //background: #845ec2;
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;
@@ -277,6 +276,11 @@ div{
         min-height: 320px;
         max-height: 320px;
     }
+    .card-body{
+        .card-text{
+            height: 180px;
+        }
+    }
     
 }
 .dropdown-menu{
@@ -289,17 +293,6 @@ div{
 .navbar-collapse {
     justify-content: end;
 }
-.btn-color {
-    background-color:#9b7550;
-}
-.btn{
-    border-color: #9b7550;
-}
-.btn:hover{
-    background: #5a3714;
-    border-color: #5a3714;
-}
-
 @each $tag, $size in $font-sizes{
     #{$tag} {
         font-size: $size;
@@ -323,11 +316,11 @@ div{
         color: #343434;
         
         h1{
-            font-size: 180px;
+            font-size: 200px;
             margin: 0;
             font-weight: 900;
             letter-spacing: 20px;
-            background: url(../multimedia/bg5.jfif) center no-repeat;
+            background: url(../multimedia/bg7.jfif) center no-repeat;
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
             
@@ -361,3 +354,16 @@ div{
         }
     }
 }
+
+//fin página error 404//
+
+//boton mercadopago
+button.mercadopago-button {
+    background-color: #9b7550;
+    color: #f2ebdf;
+    border: 1px solid #9b7550;
+    border-radius: 25px;
+    padding: 2px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }

@@ -1,6 +1,6 @@
 $flexContainer: 100%;
 
-footer {
+.footer__area {
     margin-top: auto;
     background:linear-gradient(to bottom, #9b7550, #ec9961) ;
     background-repeat: none;
@@ -25,7 +25,7 @@ footer {
                     color: #f2ebdf;
                 }
                 a:hover{
-                    color: blue;
+                    color: #705336;
                     transition: 0.2s;
                 }
             }
@@ -37,33 +37,70 @@ footer {
             margin-left: 10px;
             
         }
-        .footer__copyright {
-            flex-direction: column;
-            justify-content: center;
-            align-self: flex-end;
-            border-top: 1px #f2ebdf solid;
-            
-        }
     }
+}
+footer{
+    .footer__copyright {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        background:linear-gradient(to top, #9b7550, #ec9961);
+        padding: 5px;
+
+        a{
+            text-decoration: none;
+            color: #181515;
+            font-weight: 600;
+        }
+        
+    }
+
 }
 
 @media screen and (max-width: 768px) {
-    footer{
+    .footer__area{
         display: flex;
         justify-content: center;
-        align-items: center;
+        //align-items: center;
+        .footer__container{
+            .footer__subscribe {
+                display: none;
+            }
+            .footer__redes{
+                width: $flexContainer*2;
+                text-align: center;
+                justify-content:center;
+                .footer__redes--icons{
+                    width: $flexContainer;
+                    align-self: center;
+                }
+            }
+        }
     }
-    .footer__subscribe {
-        display: none;
-    }
-    .footer__redes{
-        width: $flexContainer;
-        text-align: center;
-        justify-content:flex-start
-    }
-    .footer__copyright{
-        display:none;
+}
+@media screen and (max-width: 560px){
+    footer{
+        .footer__copyright{
+            p{
+                font-size: 14px;
+            }
+
+        }
+    
     }
 
-    
 }
+@media screen and (max-width: 320px){
+    footer{
+        .footer__copyright{
+            p{
+                font-size: 12px;
+            }
+
+        }
+    
+    }
+
+}
+
+    

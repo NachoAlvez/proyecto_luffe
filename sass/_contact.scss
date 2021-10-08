@@ -5,9 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    
-    
+    flex-wrap: wrap; 
     .flex-container {
         display: flex;
         align-items: center;
@@ -15,7 +13,7 @@
         width: 100%;
         justify-content: center;
         margin-top: 20px;
-        .contact-info{
+        .contactInfo{
             width: 50%;
             display: flex;
             flex-direction: column;
@@ -76,7 +74,7 @@
                     background: linear-gradient(to bottom, transparent, #999);
                     outline: none;
                 }
-            .textarea{
+            textarea{
                 min-height: 120px;
                 resize: none;
             }  
