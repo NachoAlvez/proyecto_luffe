@@ -9,8 +9,7 @@ Este es el proyecto final del curso de desarrollo web de CODERHOUSE. El sitio co
 * GITHUB PAGES
 
 ## Sitio web:
-* [luffeVelas] (https://nachoalvez.github.io/proyecto_luffe/)
-* luffeVelaswebhost https://luffe-velas.000webhostapp.com/
+* luffeVelas: https://nachoalvez.github.io/proyecto_luffe/
 
 ## Repositorio:
 https://github.com/NachoAlvez/proyecto_luffe
